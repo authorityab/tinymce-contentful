@@ -27,6 +27,15 @@ window.contentfulExtension.init(function(api) {
       autoresize_bottom_margin: 15,
       resize: false,
       image_caption: true,
+
+      style_formats_merge: false,
+      style_formats: [
+        {"title":"Subheading","block":"h5","classes":"subheading"},
+        {"title":"Drop Cap","inline":"span","classes":"dropcap clearfix"}
+      ],
+      content_css: '/my-styles.css',
+      content_style: '.dropcap { float: left; font-size: 4.6em; padding-right: 3px;  line-height: 95%; }',
+
       init_instance_callback : function(editor) {
         var listening = true;
 
