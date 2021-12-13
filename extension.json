@@ -43,7 +43,7 @@
           "id": "menubar",
           "name": "Menubar",
           "type": "Symbol",
-          "default": "edit view insert format",
+          "default": "edit view insert format edit",
           "required": false,
           "description": "Specify the menus to display here. To use the default menu bar, clear this field. To hide the menu, enter the value 'false'. See https://www.tiny.cloud/docs/configure/editor-appearance/#menubar"
       }
