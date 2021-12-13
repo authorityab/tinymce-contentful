@@ -18,7 +18,7 @@ window.contentfulExtension.init(function(api) {
     api.window.startAutoResizer();
 
     tinymce.init({
-      selector: 'textarea',
+      selector: "#editor",
       plugins: p,
       toolbar: tb,
       menubar: mb,
