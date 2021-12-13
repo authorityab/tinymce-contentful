@@ -18,7 +18,7 @@ window.contentfulExtension.init(function(api) {
     api.window.startAutoResizer();
 
     tinymce.init({
-      selector: "#editor",
+      selector: 'textarea',
       plugins: p,
       toolbar: tb,
       menubar: mb,
@@ -27,8 +27,9 @@ window.contentfulExtension.init(function(api) {
       autoresize_bottom_margin: 15,
       resize: false,
       image_caption: true,
-
+      preview_styles: true,
       style_formats_merge: false,
+      importcss_append: true,
       style_formats: [
         {"title":"Subheading","block":"h5","classes":"subheading"},
         {"title":"Drop Cap","inline":"span","classes":"dropcap clearfix"}
